@@ -1,6 +1,6 @@
 'use strict';
 
-import { getIndex } from './get-index';
+let getIndex = require('./get-index');
 
 let test = require('tape');
 

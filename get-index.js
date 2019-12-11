@@ -1,6 +1,6 @@
 'use strict';
 
-export function getIndex (list, value) {
+function getIndex (list, value) {
     let index = [];
 
     for (let i= 0; i < list.length; i++) {
@@ -17,3 +17,5 @@ export function getIndex (list, value) {
         return index;
     }
 }
+
+module.exports = getIndex;
