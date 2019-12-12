@@ -1,20 +1,20 @@
 'use strict';
 
 function getIndex (list, value) {
-    let y = [];
+    let index = [];
 
     for (let i= 0; i < list.length; i++) {
         if (list[i] == value) {
-            y.push(i);
+            index.push(i);
         } 
     }
 
-    if (y[0] === undefined) {
+    if (index[0] === undefined) {
         return -1;
-    } else if (y.length === 1) {
-        return y[0];
+    } else if (index.length === 1) {
+        return index[0];
     } else {
-        return y;
+        return index;
     }
 }
 
