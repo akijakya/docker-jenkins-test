@@ -1,6 +1,6 @@
 const request = require('supertest');
 const test = require('tape');
-const app = require('./greeter');
+const app = require('./routes');
 
 test('/ endpoint', (t) => {
     request(app)
