@@ -1,12 +1,15 @@
 'use strict';
 
+// requiring bodyParser
+const bodyParser = require('body-parser');
+
 // requiring path
 const path = require('path');
 
 // requiring express
 const express = require('express');
 const app = express();
-const PORT = 8080;
+const PORT = 3000;
 
 // // connection with the database
 // const mysql = require('mysql');
@@ -27,11 +30,11 @@ const PORT = 8080;
 // });
 
 app.use(express.static('public'));
-app.use(express.urlencoded({ extended: true}));
+app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
     res.status(200);
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
 let result = [
@@ -59,9 +62,9 @@ app.post('/newgreeting', function(req, res) {
     //         res.status(500).send('Database error');
     //         return;
     //     }
-        result.push({greeting: `${req.body.greeting}`});
+        result.push(req.body);
         res.status(200);
-        // res.sendFile(path.join(__dirname, 'index.html'));
+        res.send(result[result.length - 1]);
     // });
 });
 
