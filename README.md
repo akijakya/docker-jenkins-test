@@ -1,4 +1,4 @@
 # jenkins-test
 A test repo to try out Jenkins
 
-[AWS link](http://greeter.eu-west-2.elasticbeanstalk.com/)
+[AWS link](http://greeter.eu-central-1.elasticbeanstalk.com/)
