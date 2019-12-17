@@ -2,30 +2,6 @@ const request = require('supertest');
 const test = require('tape');
 const app = require('./greeter');
 
-// test('Groot endpoint', (t) => {
-// 	request(app)
-//     .get('/groot')
-// 		.query( { message: 'somemessage' } )
-//     .expect('Content-Type', /json/)
-//     .expect(200)
-//     .end(function (err, res) {
-// 			let expectedResponse = { received: 'somemessage', translated: 'I am Groot!'  }
-//       t.error(err, 'No error');
-//       t.same(res.body, expectedResponse, 'Correct response from Groot');
-//     });
-// 	request(app)
-//     .get('/groot')
-// 		.query( {} )
-//     .expect('Content-Type', /json/)
-//     .expect(400)
-//     .end(function (err, res) {
-// 			let expectedResponse = { error: 'No message to translate' }
-//       t.error(err, 'No error');
-//       t.same(res.body, expectedResponse, 'Correct error message');
-//       t.end();
-//     });
-// });
-
 test('/ endpoint', (t) => {
     request(app)
         .get('/')
