@@ -6,7 +6,7 @@ const path = require('path');
 // requiring express
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 8080;
 
 // // connection with the database
 // const mysql = require('mysql');
