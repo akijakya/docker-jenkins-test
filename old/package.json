@@ -1,0 +1,24 @@
+{
+  "name": "jenkins-test",
+  "version": "1.0.0",
+  "description": "A test repo to try out Jenkins",
+  "main": "get-index.js",
+  "scripts": {
+    "test": "node tests.js",
+    "start": "node get-index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akijakya/jenkins-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akijakya/jenkins-test/issues"
+  },
+  "homepage": "https://github.com/akijakya/jenkins-test#readme",
+  "dependencies": {
+    "tape": "^4.11.0"
+  }
+}
