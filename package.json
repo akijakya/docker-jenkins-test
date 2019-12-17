@@ -2,10 +2,10 @@
   "name": "jenkins-test",
   "version": "1.0.0",
   "description": "A test repo to try out Jenkins",
-  "main": "get-index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "node tests.js",
-    "start": "node get-index.js"
+    "start": "node main.js",
+    "test": "node tests.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,12 @@
   },
   "homepage": "https://github.com/akijakya/jenkins-test#readme",
   "dependencies": {
-    "tape": "^4.11.0"
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "supertest": "^4.0.2",
+    "tape": "^4.12.0"
   }
 }
