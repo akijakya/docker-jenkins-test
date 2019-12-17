@@ -9,7 +9,6 @@ const path = require('path');
 // requiring express
 const express = require('express');
 const app = express();
-const PORT = 3000;
 
 // // connection with the database
 // const mysql = require('mysql');
@@ -66,10 +65,6 @@ app.post('/newgreeting', function(req, res) {
         res.status(200);
         res.send(result[result.length - 1]);
     // });
-});
-
-app.listen(PORT, () => {
-    console.log(`The server is up and running on ${PORT}`);
 });
 
 module.exports = app;
