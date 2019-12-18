@@ -7,6 +7,12 @@ pipeline {
     }
     environment {
         CI = 'true'
+        registry = "akijakya/docker-single-test"
+        registryCredential = 'akijakya-docker'
+        dockerImage = ''
+        ENV_NAME = "Greeter-env"
+        S3_BUCKET = "elasticbeanstalk-eu-central-1-124429370407"
+        APP_NAME = 'greeter'
     }
     stages {
         stage('Build') {
