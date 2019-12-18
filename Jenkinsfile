@@ -1,10 +1,11 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:alpine3.10'
-            args '-p 3000:3000'
-        }
-    }
+    agent any
+    // agent {
+    //     docker {
+    //         image 'node:alpine3.10'
+    //         args '-p 3000:3000'
+    //     }
+    // }
     environment {
         CI = 'true'
         registry = "akijakya/docker-single-test"
