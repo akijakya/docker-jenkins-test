@@ -25,7 +25,8 @@ test('/greetings endpoint', (t) => {
                 {greeting: "bye"},
                 {greeting: "hola"},
                 {greeting: "szervusz"},
-                {greeting: "grüezi"}
+                {greeting: "grüezi"},
+                {greeting: "Gday mate"}
             ];
             t.error(err, 'No error');
             t.same(res.body, expectedResponse, 'Correct response');
