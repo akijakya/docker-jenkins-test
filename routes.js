@@ -40,7 +40,8 @@ let result = [
     {greeting: "hello"},
     {greeting: "bye"},
     {greeting: "hola"},
-    {greeting: "szervusz"}
+    {greeting: "szervusz"},
+    {greeting: "grüezi"}
 ];
 
 app.get('/greetings', function(req, res) {
