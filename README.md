@@ -1,2 +1,2 @@
-# jenkins-test
-A test repo to try out Docker, Jenkins, Terraform
+# devops-test
+A test repo to try out Docker, Jenkins, Terraform etc.
