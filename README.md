@@ -1,4 +1,2 @@
 # jenkins-test
-A test repo to try out Jenkins
-
-[AWS link](http://greeter.eu-central-1.elasticbeanstalk.com/)
+A test repo to try out Docker, Jenkins, Terraform

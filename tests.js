@@ -8,7 +8,6 @@ test('/ endpoint', (t) => {
         .expect('Content-Type', /html/)
         .expect(200)
         .end(function(err, res) {
-            if (err) throw err;
             t.error(err, 'No error');
             t.end();
     });
